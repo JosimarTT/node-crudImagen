@@ -4,28 +4,30 @@
     <input type="hidden" name="_id" value="{{employee._id}}">
     <div class="form-group">
         <label>Nombres</label>
-        <input type="text" class="form-control" name="fullName" placeholder="Pepito" value="{{employee.name}}">
+        <input type="text" class="form-control" name="name" placeholder="Pepito" value="{{employee.name}}">
         <div class="text-danger">
             {{employee.fullNameError}}</div>
     </div>
     <div class="form-group">
         <label>Apellidos</label>
-        <input type="text" class="form-control" name="fullName" placeholder="Perez" value="{{employee.lastName}}">
+        <input type="text" class="form-control" name="lastName" placeholder="Perez" value="{{employee.lastName}}">
         <div class="text-danger">
             {{employee.fullNameError}}</div>
     </div>
     <div class="form-group">
         <label>Correo</label>
-        <input type="text" class="form-control" name="email" placeholder="pepito.perez@senati.edu.pe" value="{{employee.email}}">
+        <input type="text" class="form-control" name="email" placeholder="pepito.perez@senati.edu.pe"
+            value="{{employee.email}}">
         <div class="text-danger">
             {{employee.emailError}}</div>
     </div>
     <div class="form-group">
         <label>Fecha de nacimiento</label>
-        <input type="text" class="form-control" name="birth" placeholder="Fecha de nacimiento" value="{{employee.birth}}">
+        <input type="date" class="form-control" name="birth" placeholder="Fecha de nacimiento"
+            value="{{employee.birth}}">
     </div>
     <div class="form-group">
-        <button type="submit" class="btn btn-info"><i class="fa fa-database"></i> Submit</button>
-        <a class="btn btn-secondary" href="/employee/list"><i class="fa fa-list-alt"></i> View All</a>
+        <button type="submit" class="btn btn-info"><i class="fa fa-database"></i> Aceptar</button>
+        <a class="btn btn-secondary" href="/employee/list"><i class="fa fa-list-alt"></i> Listar</a>
     </div>
 </form>
